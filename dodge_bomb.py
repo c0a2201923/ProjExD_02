@@ -44,7 +44,7 @@ def main():
     kk_img6 = pg.transform.rotozoom(kk_imgs,270,2.0)
     kk_img7 = pg.transform.rotozoom(kk_imgs,315, 2.0)
 
-    kk_dic = {
+    kk_dic = {  #演習課題１ : キーを移動量の合計値タプル、値をrotozoomしたSurfaceとした辞書
     (0, 0): kk_img0,
     (0, -5): kk_img3,
     (+5, -5): kk_img2,
@@ -78,7 +78,6 @@ def main():
         if kk_rct.colliderect(bd_rct):  # 練習５：ぶつかってたら
             print("ゲームオーバー")
             return
-
         screen.blit(bg_img, [0, 0])
 
         """こうかとん"""
